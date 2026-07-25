@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOQBOL | Commercial Media & Video Production</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0f0f11;
+            color: #f1f1f5;
+            line-height: 1.6;
+        }
+
+        /* Header / Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            background-color: #141417;
+            border-bottom: 1px solid #24242a;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        nav a {
+            color: #a0a0ab;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 5rem 5% 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: #9a9ab0;
+        }
+
+        /* Portfolio Grid */
+        .portfolio-section {
+            padding: 2rem 5% 5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2.5rem;
+        }
+        .card {
+            background-color: #18181c;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #282830;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #3d3d4a;
+        }
+
+        /* Responsive 16:9 Video Embed Wrapper */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Ratio */
+            height: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .card-info {
+            padding: 1.25rem;
+        }
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: #ffffff;
+        }
+        .card-category {
+            font-size: 0.85rem;
+            color: #78788a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Footer / Contact */
+        footer {
+            text-align: center;
+            padding: 4rem 5%;
+            background-color: #141417;
+            border-top: 1px solid #24242a;
+        }
+        footer h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        .contact-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 2rem;
+            background-color: #ffffff;
+            color: #0f0f11;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: opacity 0.2s ease;
+        }
+        .contact-btn:hover {
+            opacity: 0.9;
+        }
+        .copyright {
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: #555566;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">LOQBOL</div>
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Commercial Media & Video Production</h1>
+        <p>Curated commercial reels, product showcases, and brand narrative films.</p>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-section" id="work">
+        <div class="grid">
+
+            <!-- Video Card 1 -->
+            <div class="card">
+                <div class="video-container">
+                    <!-- Replace YOUR_YOUTUBE_VIDEO_ID_1 with your actual YouTube video ID -->
+                    <iframe src="https://www.youtube-nocookie.com/embed/YOUR_YOUTUBE_VIDEO_ID_1?rel=0" 
+                            title="Commercial Project 1" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+                <div class="card-info">
+                    <div class="card-title">Elite Stone Architectural Showcase</div>
+                    <div class="card-category">Commercial / Architectural</div>
+                </div>
+            </div>
+
+            <!-- Video Card 2 -->
+            <div class="card">
+                <div class="video-container">
+                    <!-- Replace YOUR_YOUTUBE_VIDEO_ID_2 with your actual YouTube video ID -->
+                    <iframe src="https://www.youtube-nocookie.com/embed/YOUR_YOUTUBE_VIDEO_ID_2?rel=0" 
+                            title="Commercial Project 2" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+                <div class="card-info">
+                    <div class="card-title">Brand Campaign Reel</div>
+                    <div class="card-category">Commercial / Narrative</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact">
+        <h2>Ready to Produce Your Next Commercial?</h2>
+        <p>Inquiries & Production Booking</p>
+        <a href="mailto:contact@loqbol.org" class="contact-btn">Get in Touch</a>
+        <div class="copyright">&copy; LOQBOL. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>
