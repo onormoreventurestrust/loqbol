@@ -18,7 +18,7 @@
             line-height: 1.6;
         }
 
-        /* Header / Navigation */
+        /* Header Navigation */
         header {
             display: flex;
             justify-content: space-between;
@@ -34,15 +34,20 @@
             color: #ffffff;
             text-transform: uppercase;
         }
-        nav a {
+        .header-contact {
             color: #a0a0ab;
-            text-decoration: none;
-            margin-left: 1.5rem;
             font-size: 0.95rem;
-            transition: color 0.2s ease;
         }
-        nav a:hover {
+        .header-contact a {
             color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 0.3rem;
+            transition: opacity 0.2s ease;
+        }
+        .header-contact a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
         }
 
         /* Hero Section */
@@ -157,10 +162,7 @@
     <!-- Header -->
     <header>
         <div class="logo">LOQBOL</div>
-        <nav>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="header-contact">Inquiries: <a href="mailto:info@loqbol.org">info@loqbol.org</a></div>
     </header>
 
     <!-- Hero -->
@@ -170,14 +172,13 @@
     </section>
 
     <!-- Portfolio Grid -->
-    <section class="portfolio-section" id="work">
+    <section class="portfolio-section">
         <div class="grid">
 
             <!-- Video Card 1 -->
             <div class="card">
                 <div class="video-container">
-                    <!-- Replace YOUR_YOUTUBE_VIDEO_ID_1 with your actual YouTube video ID -->
-                    <iframe src="https://www.youtube-nocookie.com/embed/YOUR_YOUTUBE_VIDEO_ID_1?rel=0" 
+                    <iframe src="https://www.youtube.com/watch?v=3kATaq5G9sE&list=PLP8pyVh56X-9u21G-W4OGrT9ggeo7KVz5" 
                             title="Commercial Project 1" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen></iframe>
@@ -191,8 +192,7 @@
             <!-- Video Card 2 -->
             <div class="card">
                 <div class="video-container">
-                    <!-- Replace YOUR_YOUTUBE_VIDEO_ID_2 with your actual YouTube video ID -->
-                    <iframe src="https://www.youtube-nocookie.com/embed/YOUR_YOUTUBE_VIDEO_ID_2?rel=0" 
+                    <iframe src="https://www.youtube.com/watch?v=mElbyS-p63Q&list=PLP8pyVh56X-9zlCIvE-nlSOsl4VrYD21t&index=2" 
                             title="Commercial Project 2" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen></iframe>
@@ -210,8 +210,8 @@
     <footer id="contact">
         <h2>Ready to Produce Your Next Commercial?</h2>
         <p>Inquiries & Production Booking</p>
-        <a href="mailto:contact@loqbol.org" class="contact-btn">Get in Touch</a>
-        <div class="copyright">&copy; LOQBOL. All rights reserved.</div>
+        <a href="mailto:info@loqbol.org" class="contact-btn">Get in Touch</a>
+        <div class="copyright">&copy; LOQBOL All rights reserved.</div>
     </footer>
 
 </body>
